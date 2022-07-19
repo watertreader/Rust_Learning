@@ -1,0 +1,57 @@
+### to install rust 
+curl https://sh.rustup.rs -sSf | sh
+
+### upgrade
+rustup update
+
+## install beta compiler
+rustup toolchain install beta
+
+## create new program 
+cargo new foo
+
+## create new library
+cargo new --lib foo
+
+##  to look for 3rd parties libraries
+cargo search serde
+
+## to build (we need to be in same directory with *.toml file)
+cargo build
+
+## the build is build in a directory target
+## the build executable in a default folder debug under target
+
+## unless u dun want it, you can compile it with 
+cargo build --release
+
+## to debug
+rust-gdb
+
+## For the most part, Rust avoids using dynamic libraries. 
+## Instead, all of the dependencies of a Rust program are 
+## linked directly into the executable, and only
+## select operating system libraries are dynamically linked.
+
+===============================================================================================
+### basic langauge
+## declare a function
+fn myFunc()
+{
+
+}
+
+### accessing module as a section in file
+### declare a module
+
+pub mod module_a {
+    pub fn a_thing() {
+         println!("This is a thing");
+    }
+    
+    pub fn a_second_thing() {
+         a_thing();
+         println!("This is another thing");
+    }
+}
+
