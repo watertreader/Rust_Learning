@@ -1,0 +1,26 @@
+===============================================================================================
+### basic langauge
+## declare a function
+fn myFunc()
+{
+
+}
+
+### accessing module as a section in file
+### declare a module
+
+pub mod module_a {
+    pub fn a_thing() {
+         println!("This is a thing");
+    }
+    
+    pub fn a_second_thing() {
+         a_thing();
+         println!("This is another thing");
+    }
+}
+
+///////  Casting 
+// explicit cast
+let x = 123123.132123;
+let b = x as u8;        // casting as uint
